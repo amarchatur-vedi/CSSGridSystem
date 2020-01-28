@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .emoji{
+            font-size: 10rem;
+            height: auto;
+            width: auto;
+            transition: all 0.5s;
+            text-align: center;
+        }
+        .emoji:hover{
+            transform: scale(1.1);
+        }
+        .positive{
+            background-image: linear-gradient(to left,rgb(7, 7, 12),rgb(19, 19, 243));
+        }
+        .negative{
+            background-image: linear-gradient(to left,rgb(82, 248, 4),rgb(27, 63, 11));
+        }
+        .grid-container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template:1fr 1fr/1fr 1fr 1fr;
+            justify-items: stretch;
+        }
+        .item1{
+            grid-column: 2/4; /*start from column 2 and will go upto 4 counting grid gap as 1 column */
+        }
+        .item3{
+            grid-column: 1/4; /*start from column 1 and will go upto 4   counting grid gap as 1 column  */
+        }
+    </style
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1 emoji positive">😃</div>
+        <div class="item2 emoji negative">😠</div>
+        <div class="item4 emoji positive">😍</div>
+        <div class="item3 emoji negative">😈</div>
+        <div class="item5 emoji positive">😘</div>
+        <div class="item4 emoji negative">😤</div>
+    </div>
+</body>
+</html>
